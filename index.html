@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo&family=Fjalla+One&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <header>WEATHER DASHBOARD</header>
+
+    <aside>
+      <div class="search">
+        <h3 class="card-header text-uppercase">Search for a City</h3>
+        <form id="user-form" class="card-body">
+          <input
+            name="city"
+            id="city-search"
+            type="text"
+            autofocus="true"
+            class="form-input"
+            placeholder="e.g. London" />
+          <button type="submit" id="search-btn">Search</button>
+        </form>
+      </div>
+
+      <div>
+        <ul id="city-list"></ul>
+      </div>
+    </aside>
+
+    <div id="container">
+      
+        <div id="current-day">
+        <h2 class="city-name"></h2>
+        <h3 class="city-temp"></h3>
+        <h3 class="city-humidity"></h3>
+        <h3 class="city-wind"></h3>
+
+      </div>
+      <div id="day-container">
+
+        <h2>5-DAY FORECAST</h2>
+      </div>
+    </div>
+
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
