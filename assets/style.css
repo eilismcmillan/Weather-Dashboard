@@ -5,6 +5,10 @@
 body {
   font-family: "Arimo", sans-serif;
   background-color: whitesmoke;
+  flex: 1;
+  margin: auto 0;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 header {
@@ -19,10 +23,10 @@ header {
 aside {
   text-align: center;
   width: 25%;
-  height: 100%;
   background-color: #aba418;
   float: left;
-  height: 100vh;
+  height: 125vh;
+  overflow-y: scroll;
 }
 
 aside .search {
@@ -54,11 +58,31 @@ aside .search {
 #city-list {
   border-top: 0.14em solid black;
   margin: auto 1.2em;
+  padding: 1em;
+  list-style: none;
+  text-align: center
+}
+
+#city-button {
+  font-family:"Arimo", sans-serif;
+  font-size: 1em;
+  width: 80%;
+  padding: 0.5em;
+  margin: 0.5em auto;
+  background-color: #78c5c9;
+  border: 0.2em solid #ac4100;
+}
+
+#city-button:hover {
+  background-color: #30575d;
+  color: whitesmoke;
+  cursor: pointer;
 }
 
 #day-container {
   display: flex;
   justify-content: center;
+  
 }
 
 #current-day {
@@ -67,18 +91,32 @@ aside .search {
   border: 0.15em solid black;
   margin: 1em;
   background-color: #d0d0d0;
-  height: 16em;
+  height: 20em;
   margin-left: 30%;
-  margin-right: 5%;
-  
+  margin-right: 5%; 
 }
 
-#day-container {
+
+#forecast-container {
   flex-wrap: wrap;
   flex-direction: row;
   background-color: #78c5c9;
-  height: 15em;
+  height: 25em;
   margin-left: 30%;
   margin-right: 5%;
   border: 0.15em solid black;
+  text-align: center;
+  padding: 0em 2em 0.5em 2em;
 }
+
+#day-container {
+  justify-content: space-between;
+}
+
+#weather-card {
+  border: 0.1em solid #ac4100;
+  padding: 0.3em;
+}
+
+
+
